@@ -1,0 +1,133 @@
+{
+    "name": "ds_source_csv",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "ls_blob_storage",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobStorageLocation",
+                "fileName": "apple_global_sales_dataset.csv",
+                "container": "landing-zone"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "sale_id",
+                "type": "String"
+            },
+            {
+                "name": "sale_date",
+                "type": "String"
+            },
+            {
+                "name": "year",
+                "type": "String"
+            },
+            {
+                "name": "quarter",
+                "type": "String"
+            },
+            {
+                "name": "month",
+                "type": "String"
+            },
+            {
+                "name": "country",
+                "type": "String"
+            },
+            {
+                "name": "region",
+                "type": "String"
+            },
+            {
+                "name": "city",
+                "type": "String"
+            },
+            {
+                "name": "product_name",
+                "type": "String"
+            },
+            {
+                "name": "category",
+                "type": "String"
+            },
+            {
+                "name": "storage",
+                "type": "String"
+            },
+            {
+                "name": "color",
+                "type": "String"
+            },
+            {
+                "name": "unit_price_usd",
+                "type": "String"
+            },
+            {
+                "name": "discount_pct",
+                "type": "String"
+            },
+            {
+                "name": "units_sold",
+                "type": "String"
+            },
+            {
+                "name": "discounted_price_usd",
+                "type": "String"
+            },
+            {
+                "name": "revenue_usd",
+                "type": "String"
+            },
+            {
+                "name": "currency",
+                "type": "String"
+            },
+            {
+                "name": "fx_rate_to_usd",
+                "type": "String"
+            },
+            {
+                "name": "revenue_local_currency",
+                "type": "String"
+            },
+            {
+                "name": "sales_channel",
+                "type": "String"
+            },
+            {
+                "name": "payment_method",
+                "type": "String"
+            },
+            {
+                "name": "customer_segment",
+                "type": "String"
+            },
+            {
+                "name": "customer_age_group",
+                "type": "String"
+            },
+            {
+                "name": "previous_device_os",
+                "type": "String"
+            },
+            {
+                "name": "customer_rating",
+                "type": "String"
+            },
+            {
+                "name": "return_status",
+                "type": "String"
+            }
+        ]
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}
